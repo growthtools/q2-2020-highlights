@@ -1,3 +1,9 @@
+# Q2 2020 Growth Tools Engineering highlights page
+
+This project renders the Q2 2020 highlights for the engineering team of Growth Tools!
+
+-------------------------
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

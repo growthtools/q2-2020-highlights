@@ -1,23 +1,37 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import useWebAnimations, { bounce } from "@wellyshen/use-web-animations";
+import { useImmer } from "use-immer";
+import classnames from "classnames";
+
+import "./App.css";
 
 function App() {
+  const [showns, setShowns] = useImmer({});
+  const show = elem =>
+    setShowns(draft => {
+      draft[elem] = true;
+    });
+  setTimeout(() => show("header"), 500);
+  setTimeout(() => show("chevron"), 1000);
+
+  const { keyframes, timing } = bounce;
+  const { ref } = useWebAnimations({
+    keyframes,
+    timing: { ...timing, delay: 1000, duration: timing.duration * 1.5 },
+  });
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+      <header>
+        <h1 className={classnames({ shown: showns.header })}>
+          Welcome to the Q2 2020 Growth Tools Engineering Highlights!
+        </h1>
+        <div
+          className={classnames("chevron", { shown: showns.chevron })}
+          ref={ref}
         >
-          Learn React
-        </a>
+          &or;
+        </div>
       </header>
     </div>
   );
