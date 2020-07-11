@@ -6,6 +6,7 @@ import classnames from "classnames";
 import "./App.css";
 import "animate.css/animate.min.css";
 import UASection from "./UASection";
+import LastWeeksWinsSection from "./LastWeeksWinsSection";
 
 function App() {
   const [showns, setShowns] = useImmer({});
@@ -36,6 +37,7 @@ function App() {
         </div>
       </header>
       <UASection />
+      <LastWeeksWinsSection />
     </div>
   );
 }

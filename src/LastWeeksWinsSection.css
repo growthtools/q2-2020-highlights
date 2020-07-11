@@ -1,0 +1,69 @@
+.last-weeks-wins-section {
+  background: cornflowerblue;
+  color: black;
+  height: 100vh;
+  transition: 500ms ease-in-out all;
+  position: relative;
+}
+
+.last-weeks-wins-section h2 {
+  transition: 500ms ease-in-out all;
+  font-size: 3rem;
+  padding: 2rem 3rem;
+  margin: 0;
+}
+
+.last-weeks-wins-section img.shot {
+  position: absolute;
+  top: 35%;
+  border: 1rem solid white;
+  border-bottom: 3rem solid white;
+  border-radius: 5px;
+  transform: rotate(30deg);
+  opacity: 0;
+  transition: 700ms ease-in-out all;
+}
+
+.last-weeks-wins-section img.shot.shown {
+  opacity: 1;
+}
+
+.last-weeks-wins-section img.shot-0.shown {
+  transform: rotate(23deg);
+  left: 120px;
+}
+
+.last-weeks-wins-section img.shot-1.shown {
+  transform: rotate(-25deg);
+  top: 33%;
+  left: 350px;
+  transition-delay: 500ms;
+}
+
+.last-weeks-wins-section img.shot-2.shown {
+  transform: rotate(35deg);
+  top: 43%;
+  left: 500px;
+  transition-delay: 1500ms;
+}
+
+.last-weeks-wins-section img.shot-3.shown {
+  transform: rotate(-24deg);
+  top: 35%;
+  right: 150px;
+  transition-delay: 2000ms;
+}
+
+.last-weeks-wins-section img.shot-4.shown {
+  transform: rotate(14deg);
+  top: 35%;
+  right: 250px;
+  transition-delay: 2600ms;
+}
+
+.last-weeks-wins-section img.shot-5.shown {
+  top: 24%;
+  transform: rotate(-28deg);
+  right: 530px;
+  transition-delay: 3100ms;
+}
