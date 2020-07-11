@@ -31,3 +31,106 @@ header h1.shown {
 .chevron.shown {
   opacity: 1;
 }
+
+.style-guide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.types {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.types h5 {
+  margin-left: 5rem;
+}
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  min-width: 101px;
+  padding: 0.5rem 1rem;
+  font-size: 20px;
+  font-weight: 500;
+  border: none;
+  box-sizing: border-box;
+}
+
+.primary {
+  border-radius: 6px;
+  max-height: 48px;
+  background-color: green;
+  color: white;
+}
+
+.primary.active {
+  background-color: darkred;
+}
+
+.primary.hover {
+  box-shadow: 0 2px 24px 0 rgba(45, 45, 45, 0.7);
+  cursor: pointer;
+}
+
+.primary.focus {
+  box-shadow: 0 0 0 8px rgba(45, 45, 45 0.2), 0 2px 24px 0 rgba(45, 45, 45 0.6);
+  outline: none;
+}
+
+.primary.disabled {
+  opacity: 0.2;
+}
+
+.secondary {
+  max-height: 48px;
+  border-radius: 6px;
+  border: 2px solid #2cd886;
+  color: orange;
+}
+
+.secondary.active {
+}
+
+.secondary.hover {
+}
+
+.secondary.focus {
+}
+
+.secondary.disabled {
+}
+
+.tertiary {
+  height: 32px;
+  padding: 0.375rem 0.5rem !important;
+  color: purple;
+}
+.tertiary a {
+  color: purple;
+}
+
+.tertiary .fa {
+  font-size: 16px;
+  color: purple;
+}
+
+.tertiary.active {
+}
+.tertiary.hover {
+  color: purple;
+  background-color: lightgreen;
+}
+
+.tertiary.focus {
+}
+
+.tertiary.disabled {
+}

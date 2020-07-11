@@ -3,6 +3,7 @@ import useWebAnimations, { bounce } from "@wellyshen/use-web-animations";
 import { useImmer } from "use-immer";
 import classnames from "classnames";
 
+import StyleGuideHighlights from "./StyleGuideHighlights.js";
 import "./App.css";
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
           &or;
         </div>
       </header>
+      <StyleGuideHighlights />
     </div>
   );
 }
