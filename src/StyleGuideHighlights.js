@@ -10,8 +10,10 @@ function StyleGuideHighlights() {
   const [brandName, setBrandName] = useState("growthTools");
 
   function handleButtonChange() {
-    setBrandNameIndex(brandNameIndex + 1)
-    setBrandName(brandNames[brandNameIndex]);
+    for (let x = 0; x < brandNames.length; x++) {
+      setBrandNameIndex(brandNameIndex + 1)
+      setBrandName(brandNames[brandNameIndex]);
+    }
   }
 
   return (
@@ -25,28 +27,33 @@ function StyleGuideHighlights() {
             <div className="buttons">
               <Button
                 buttonType={btype}
+                brandName={brandName}
                 handleButtonChange={handleButtonChange}
-                pseudoClass="default"
+                pseudoClass="Default"
               />
               <Button
                 buttonType={btype}
+                brandName={brandName}
                 handleButtonChange={handleButtonChange}
-                pseudoClass="hover"
+                pseudoClass="Hover"
               />
               <Button
                 buttonType={btype}
+                brandName={brandName}
                 handleButtonChange={handleButtonChange}
-                pseudoClass="focus"
+                pseudoClass="Focus"
               />
               <Button
                 buttonType={btype}
+                brandName={brandName}
                 handleButtonChange={handleButtonChange}
-                pseudoClass="pressed"
+                pseudoClass="Pressed"
               />
               <Button
                 buttonType={btype}
+                brandName={brandName}
                 handleButtonChange={handleButtonChange}
-                pseudoClass="disabled"
+                pseudoClass="Disabled"
               />
             </div>
           </div>

@@ -4,16 +4,27 @@ import classnames from "classnames";
 
 const Button = ({
   buttonType,
+  brandName,
   handleButtonChange,
   pseudoClass
 }) => {
 
   const { ref } = useWebAnimations({ ...rubberBand });
 
-  let classes = classnames("button", {
+  let initialClass = "button " + pseudoClass.toLowerCase();
+
+  let classes = classnames(initialClass, {
     primary: buttonType === "primary",
     secondary: buttonType === "secondary",
-    tertiary: buttonType === "tertiary"
+    tertiary: buttonType === "tertiary",
+    growthTools: brandName === "growthTools",
+    growthUniversity: brandName === "growthUniversity",
+    dripScripts: brandName === "dripScripts",
+    goViral: brandName === "goViral",
+    accelerators: brandName === "accelerators",
+    attract: brandName === "attract",
+    welcomely: brandName === "welcomely",
+
   })
 
   return (
@@ -22,6 +33,9 @@ const Button = ({
       className={classes}
       onClick={handleButtonChange}
       ref={ref}>
+      {buttonType === "tertiary" && (
+        <div className="checkIcon"></div>
+      )}
       {pseudoClass}
     </div>
 
