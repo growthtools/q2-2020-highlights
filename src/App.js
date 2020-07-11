@@ -4,6 +4,7 @@ import { useImmer } from "use-immer";
 import classnames from "classnames";
 
 import "./App.css";
+import "animate.css/animate.min.css";
 import UASection from "./UASection";
 
 function App() {
