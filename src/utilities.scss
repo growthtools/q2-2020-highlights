@@ -1,0 +1,55 @@
+$white: #ffffff;
+
+$growth-tools-green: #2cd886;
+$university-green: #8cc63f;
+$drip-scripts-green: #17da5e;
+$goviral-orange: #ff7727;
+$welcomely-pink: #ef4b54;
+$attract-blue: #0974f0;
+$accelerator-blue: #009aff;
+$growth-tools-gold: #ffd400;
+$growth-tools-navy-blue: #161f5d;
+
+// $growth-tools-green-rgb: 44, 216, 134;
+// $university-green-rgb: xx;
+// $drip-scripts-green-rgb: xx;
+// $goviral-orange-rgb: xx;
+// $welcomely-pink-rgb: xx;
+// $attract-blue-rgb: xx;
+// $accelerator-blue-rgb: xx;
+// $growth-tools-gold-rgb: xx;
+// $growth-tools-navy-blue-rgb: xx;
+
+// @brandColor ($white, $growth-tools-green, $rgba)
+
+@mixin brandColor($color, $bgcolor, $rgb) {
+  &.primary {
+    color: $color;
+    background-color: $bgcolor;
+  }
+
+  &.secondary {
+    border: 2px solid $bgcolor;
+    background-color: rgba($rgb, 0.05);
+    color: $bgcolor;
+  }
+
+  &.tertiary {
+    color: $bgcolor;
+  }
+
+  &.tertiary.hover {
+    background-color: rgba($rgb, 0.1);
+  }
+
+  &.focus {
+    box-shadow: 0 0 0 8px rgba($rgb, 0.2), 0 2px 24px 0 rgba($rgb, 0.6);
+  }
+
+  &.disabled {
+    box-shadow: 0 2px 12px 0 rgba($rgb, 0.25);
+  }
+  &.hover {
+    box-shadow: 0 2px 24px 0 rgba($rgb, 0.7);
+  }
+}

@@ -1,14 +1,4 @@
-:root {
-  --growth-tools-green: #2cd886;
-  --university-green: #8cc63f;
-  --drip-scripts-green: #17da5e;
-  --goviral-orange: #ff7727;
-  --welcomely-pink: #ef4b54;
-  --attract-blue: #0974f0;
-  --accelerator-blue: #009aff;
-  --growth-tools-gold: #ffd400;
-  --growth-tools-navy-blue: #161f5d;
-}
+@import "utilities.scss";
 
 header {
   background-color: #282c34;
@@ -81,22 +71,22 @@ header h1.shown {
 .primary {
   border-radius: 6px;
   height: 48px;
-  color: white;
-  background-color: var(--growth-tools-green);
+  // color: white;
+  // background-color: $growth-tools-green;
 }
 
 .secondary {
   border-radius: 6px;
   height: 48px;
-  border: 2px solid var(--growth-tools-green);
-  background-color: rgba(44, 216, 134, 0.05);
-  color: var(--growth-tools-green);
+  // border: 2px solid $growth-tools-green;
+  // background-color: rgba(44, 216, 134, 0.05);
+  // color: $growth-tools-green;
 }
 
 .tertiary {
   border-radius: 4px;
   height: 32px;
-  color: var(--growth-tools-green);
+  // color: $growth-tools-green;
 }
 
 .tertiary .checkIcon {
@@ -113,7 +103,7 @@ header h1.shown {
 
 .tertiary.hover {
   box-shadow: none;
-  background-color: rgba(44, 216, 134, 0.1);
+  // background-color: rgba(44, 216, 134, 0.1);
 }
 
 .tertiary.focus {
@@ -129,43 +119,38 @@ header h1.shown {
 }
 
 .focus {
-  box-shadow: 0 0 0 8px rgba(44, 216, 134, 0.2), 0 2px 24px 0 rgba(44, 216, 134, 0.6);
+  // box-shadow: 0 0 0 8px rgba(44, 216, 134, 0.2), 0 2px 24px 0 rgba(44, 216, 134, 0.6);
 }
 
 .disabled {
   opacity: 0.2;
-  box-shadow: 0 2px 12px 0 rgba(44, 216, 134, 0.25);
+  // box-shadow: 0 2px 12px 0 rgba(44, 216, 134, 0.25);
 }
 .hover {
-  box-shadow: 0 2px 24px 0 rgba(44, 216, 134, 0.7);
+  // box-shadow: 0 2px 24px 0 rgba(44, 216, 134, 0.7);
 }
 
-/* 
 .growthTools {
-  background-color: var(--growth-tools-green);
+  @include brandColor($white, $growth-tools-green, $growth-tools-green);
 }
 .growthUniversity {
-  color: var(--university-green);
+  @include brandColor($white, $university-green, $university-green);
 }
 .dripScripts {
-  color: var(--drip-scripts-green);
+  @include brandColor($white, $drip-scripts-green, $drip-scripts-green);
 }
 .goViral {
-  color: var(--goviral-orange);
+  @include brandColor($white, $goviral-orange, $goviral-orange);
 }
 .welcomely {
-  color: var(--welcomely-pink);
+  @include brandColor($white, $welcomely-pink, $welcomely-pink);
 }
 .attract {
-  color: var(--attract-blue);
+  @include brandColor($white, $attract-blue, $attract-blue);
 }
 .accelerator {
-  color: var(--accelerator-blue);
+  @include brandColor($white, $accelerator-blue, $accelerator-blue);
 }
 .gold {
-  color: var(--growth-tools-gold);
+  @include brandColor($white, $growth-tools-gold, $growth-tools-gold);
 }
-.white {
-}
-.gray {
-} */

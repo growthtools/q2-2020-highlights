@@ -4,7 +4,7 @@ import { useImmer } from "use-immer";
 import classnames from "classnames";
 
 import StyleGuideHighlights from "./StyleGuideHighlights.js";
-import "./App.css";
+import "./App.scss";
 
 function App() {
   const [showns, setShowns] = useImmer({});
