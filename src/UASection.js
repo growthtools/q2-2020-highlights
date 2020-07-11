@@ -1,6 +1,7 @@
 import React from "react";
 import classnames from "classnames";
 import VisibilitySensor from "react-visibility-sensor";
+import ScrollAnimation from "react-animate-on-scroll";
 
 import "./UASection.css";
 
@@ -27,11 +28,9 @@ const UASection = () => {
   ));
   return (
     <div className="ua-section">
-      <VisibilitySensor>
-        {({ isVisible }) => (
-          <h2 className={classnames({ shown: isVisible })}>Unfair Advantage</h2>
-        )}
-      </VisibilitySensor>
+      <ScrollAnimation animateIn="fadeIn" animateOnce={true}>
+        <h2>Unfair Advantage</h2>
+      </ScrollAnimation>
       {imageElems}
     </div>
   );

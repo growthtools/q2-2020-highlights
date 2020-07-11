@@ -10,15 +10,7 @@
 }
 
 .ua-section h2 {
-  transition: 500ms ease-in-out all;
-  transform: translateY(-50px);
-  opacity: 0;
   font-size: 3rem;
-}
-
-.ua-section h2.shown {
-  transform: translateY(0px);
-  opacity: 1;
 }
 
 .ua-section img.shot {
