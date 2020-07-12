@@ -10,19 +10,10 @@ $accelerator-blue: #009aff;
 $growth-tools-gold: #ffd400;
 $growth-tools-navy-blue: #161f5d;
 
-// $growth-tools-green-rgb: 44, 216, 134;
-// $university-green-rgb: xx;
-// $drip-scripts-green-rgb: xx;
-// $goviral-orange-rgb: xx;
-// $welcomely-pink-rgb: xx;
-// $attract-blue-rgb: xx;
-// $accelerator-blue-rgb: xx;
-// $growth-tools-gold-rgb: xx;
-// $growth-tools-navy-blue-rgb: xx;
-
-// @brandColor ($white, $growth-tools-green, $rgba)
-
 @mixin brandColor($color, $bgcolor, $rgb) {
+  &.header {
+    color: $bgcolor;
+  }
   &.primary {
     color: $color;
     background-color: $bgcolor;
@@ -40,6 +31,7 @@ $growth-tools-navy-blue: #161f5d;
 
   &.tertiary.hover {
     background-color: rgba($rgb, 0.1);
+    box-shadow: none;
   }
 
   &.focus {

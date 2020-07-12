@@ -1,15 +1,12 @@
 import React, { useState } from "react";
-import useWebAnimations, { rubberBand } from "@wellyshen/use-web-animations";
 import classnames from "classnames";
 
 const Button = ({
   buttonType,
   brandName,
-  handleButtonChange,
+  setNextColor,
   pseudoClass
 }) => {
-
-  const { ref } = useWebAnimations({ ...rubberBand });
 
   let initialClass = "button " + pseudoClass.toLowerCase();
 
@@ -24,15 +21,13 @@ const Button = ({
     accelerators: brandName === "accelerators",
     attract: brandName === "attract",
     welcomely: brandName === "welcomely",
-
   })
 
   return (
 
     <div
       className={classes}
-      onClick={handleButtonChange}
-      ref={ref}>
+      onClick={setNextColor}>
       {buttonType === "tertiary" && (
         <div className="checkIcon"></div>
       )}
