@@ -4,6 +4,7 @@ import { useImmer } from "use-immer";
 import classnames from "classnames";
 
 import "./App.css";
+import UASection from "./UASection";
 
 function App() {
   const [showns, setShowns] = useImmer({});
@@ -33,6 +34,7 @@ function App() {
           &or;
         </div>
       </header>
+      <UASection />
     </div>
   );
 }
