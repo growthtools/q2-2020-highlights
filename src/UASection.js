@@ -5,20 +5,17 @@ import VisibilitySensor from "react-visibility-sensor";
 import "./UASection.css";
 
 const shots = [
-  "https://placeimg.com/400/400/any.png",
-  "https://placeimg.com/400/400/any.png",
-  "https://placeimg.com/400/400/any.png",
-  "https://placeimg.com/400/400/any.png",
-  "https://placeimg.com/400/400/any.png",
-  "https://placeimg.com/400/400/any.png",
+  "/ua-6.png",
+  "/ua-2.png",
+  "/ua-3.png",
+  "/ua-4.png",
+  "/ua-5.png",
+  "/ua-1.png",
 ];
 
 const UASection = () => {
   const imageElems = shots.map((src, index) => (
-    <VisibilitySensor
-      key={`${src}-${index}`}
-      offset={{ partialVisibility: true }}
-    >
+    <VisibilitySensor key={`${src}-${index}`} partialVisibility={true}>
       {({ isVisible }) => (
         <img
           className={classnames(`shot shot-${index}`, { shown: isVisible })}
@@ -30,7 +27,7 @@ const UASection = () => {
   ));
   return (
     <div className="ua-section">
-      <VisibilitySensor offset={{ bottom: 40 }}>
+      <VisibilitySensor>
         {({ isVisible }) => (
           <h2 className={classnames({ shown: isVisible })}>Unfair Advantage</h2>
         )}

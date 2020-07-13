@@ -30,6 +30,9 @@
   transform: rotate(30deg);
   opacity: 0;
   transition: 700ms ease-in-out all;
+  max-width: 400px;
+  max-height: 600px;
+  box-shadow: 0 2px 16px 0 rgba(0,0,0,0.08);
 }
 
 .ua-section img.shot.shown {
@@ -70,8 +73,12 @@
 }
 
 .ua-section img.shot-5.shown {
-  top: 20%;
+  top: 34%;
   transform: rotate(-28deg);
-  right: 500px;
+  right: 450px;
   transition-delay: 3100ms;
+}
+
+.ua-section img.shot:hover {
+  z-index: 10;
 }
