@@ -5,6 +5,9 @@ import classnames from "classnames";
 
 import StyleGuideHighlights from "./StyleGuideHighlights.js";
 import "./App.scss";
+import "animate.css/animate.min.css";
+import UASection from "./UASection";
+import LastWeeksWinsSection from "./LastWeeksWinsSection";
 
 function App() {
   const [showns, setShowns] = useImmer({});
@@ -34,6 +37,8 @@ function App() {
           &or;
         </div>
       </header>
+      <UASection />
+      <LastWeeksWinsSection />
       <StyleGuideHighlights />
     </div>
   );
