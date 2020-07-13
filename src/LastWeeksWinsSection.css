@@ -22,6 +22,12 @@
   transform: rotate(30deg);
   opacity: 0;
   transition: 700ms ease-in-out all;
+  max-width: 600px;
+  max-height: 400px;
+}
+
+.last-weeks-wins-section img.shot:hover {
+  z-index: 10;
 }
 
 .last-weeks-wins-section img.shot.shown {
@@ -43,7 +49,7 @@
 
 .last-weeks-wins-section img.shot-2.shown {
   transform: rotate(35deg);
-  top: 40%;
+  top: 34%;
   left: 500px;
   transition-delay: 1500ms;
 }
@@ -65,6 +71,6 @@
 .last-weeks-wins-section img.shot-5.shown {
   top: 20%;
   transform: rotate(-18deg);
-  right: 450px;
+  right: 400px;
   transition-delay: 3100ms;
 }

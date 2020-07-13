@@ -6,12 +6,12 @@ import ScrollAnimation from "react-animate-on-scroll";
 import "./LastWeeksWinsSection.css";
 
 const shots = [
-  "https://placeimg.com/400/400/any.png",
-  "https://placeimg.com/400/400/any.png",
-  "https://placeimg.com/400/400/any.png",
-  "https://placeimg.com/400/400/any.png",
-  "https://placeimg.com/400/400/any.png",
-  "https://placeimg.com/400/400/any.png",
+  "/last-week-6.png",
+  "/last-week-5.png",
+  "/last-week-4.png",
+  "/last-week-3.png",
+  "/last-week-2.png",
+  "/last-week-1.png",
 ];
 
 const LastWeeksWinsSection = () => {
