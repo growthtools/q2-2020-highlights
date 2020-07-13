@@ -17,7 +17,7 @@ function StyleGuideHighlights() {
   });
 
   function setNextColor() {
-    if (brandNameIndex == brandNames.length - 1) {
+    if (brandNameIndex === brandNames.length - 1) {
       setBrandNameIndex(0)
       return
     }

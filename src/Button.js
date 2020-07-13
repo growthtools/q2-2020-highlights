@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import classnames from "classnames";
 
 const Button = ({
@@ -29,7 +29,7 @@ const Button = ({
       className={classes}
       onClick={setNextColor}>
       {buttonType === "tertiary" && (
-        <div className="checkIcon"></div>
+        <div className="checkmark"></div>
       )}
       {pseudoClass}
     </div>
