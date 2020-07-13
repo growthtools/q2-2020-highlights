@@ -41,4 +41,7 @@ $growth-tools-navy-blue: #161f5d;
   &.hover {
     box-shadow: 0 2px 24px 0 rgba($rgb, 0.7);
   }
+  #IconCheck {
+    fill: $bgcolor;
+  }
 }

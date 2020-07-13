@@ -1,6 +1,7 @@
 import React from "react";
 import classnames from "classnames";
-
+//import CheckIcon from "./check.svg";
+import { ReactComponent as CheckIcon } from './check.svg';
 const Button = ({
   buttonType,
   brandName,
@@ -29,10 +30,11 @@ const Button = ({
       className={classes}
       onClick={setNextColor}>
       {buttonType === "tertiary" && (
-        <div className="checkmark"></div>
-      )}
+        < CheckIcon />
+      )
+      }
       {pseudoClass}
-    </div>
+    </div >
 
   )
 }

@@ -71,8 +71,14 @@ header h1.shown {
   font-size: 20px;
   font-weight: 500;
   box-sizing: border-box;
+  img {
+    padding-right: 0.25rem;
+    margin-left: -9px;
+  }
 }
-
+#IconCheck {
+  fill: red;
+}
 .primary {
   border-radius: 6px;
   height: 48px;
@@ -86,14 +92,6 @@ header h1.shown {
 .tertiary {
   border-radius: 4px;
   height: 32px;
-}
-
-.checkmark {
-  height: 24px;
-  width: 24px;
-  padding-right: 0.25rem;
-  margin-left: -9px;
-  background-image: url("./check.svg");
 }
 
 .primary.pressed {
