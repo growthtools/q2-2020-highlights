@@ -28,7 +28,7 @@ const UASection = () => {
   ));
   return (
     <div className="ua-section">
-      <ScrollAnimation animateIn="fadeIn" animateOnce={true}>
+      <ScrollAnimation animateIn="zoomIn" animateOnce={true}>
         <h2>Unfair Advantage</h2>
       </ScrollAnimation>
       {imageElems}

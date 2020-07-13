@@ -24,6 +24,7 @@
   transition: 700ms ease-in-out all;
   max-width: 600px;
   max-height: 400px;
+  box-shadow: 0 2px 16px 0 rgba(0,0,0,0.08);
 }
 
 .last-weeks-wins-section img.shot:hover {
