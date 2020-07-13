@@ -1,0 +1,47 @@
+$white: #ffffff;
+
+$growth-tools-green: #2cd886;
+$university-green: #8cc63f;
+$drip-scripts-green: #17da5e;
+$goviral-orange: #ff7727;
+$welcomely-pink: #ef4b54;
+$attract-blue: #0974f0;
+$accelerator-blue: #009aff;
+$growth-tools-gold: #ffd400;
+$growth-tools-navy-blue: #161f5d;
+
+@mixin brandColor($color, $bgcolor, $rgb) {
+  &.header {
+    color: $bgcolor;
+  }
+  &.primary {
+    color: $color;
+    background-color: $bgcolor;
+  }
+
+  &.secondary {
+    border: 2px solid $bgcolor;
+    background-color: rgba($rgb, 0.05);
+    color: $bgcolor;
+  }
+
+  &.tertiary {
+    color: $bgcolor;
+  }
+
+  &.tertiary.hover {
+    background-color: rgba($rgb, 0.1);
+    box-shadow: none;
+  }
+
+  &.focus {
+    box-shadow: 0 0 0 8px rgba($rgb, 0.2), 0 2px 24px 0 rgba($rgb, 0.6);
+  }
+
+  &.hover {
+    box-shadow: 0 2px 24px 0 rgba($rgb, 0.7);
+  }
+  #IconCheck {
+    fill: $bgcolor;
+  }
+}

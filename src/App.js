@@ -3,7 +3,8 @@ import useWebAnimations, { bounce } from "@wellyshen/use-web-animations";
 import { useImmer } from "use-immer";
 import classnames from "classnames";
 
-import "./App.css";
+import StyleGuideHighlights from "./StyleGuideHighlights.js";
+import "./App.scss";
 import "animate.css/animate.min.css";
 import UASection from "./UASection";
 import LastWeeksWinsSection from "./LastWeeksWinsSection";
@@ -38,6 +39,7 @@ function App() {
       </header>
       <UASection />
       <LastWeeksWinsSection />
+      <StyleGuideHighlights />
     </div>
   );
 }
