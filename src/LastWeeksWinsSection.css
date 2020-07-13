@@ -1,6 +1,6 @@
 .last-weeks-wins-section {
-  background: cornflowerblue;
-  color: black;
+  background: linear-gradient(134.8deg, #263238 0%, #37474f 100%);
+  color: white;
   height: 100vh;
   transition: 500ms ease-in-out all;
   position: relative;

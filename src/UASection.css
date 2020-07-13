@@ -1,5 +1,5 @@
 .ua-section {
-  background: salmon;
+  background: linear-gradient(to bottom, #00dc7d 80%, white);
   color: black;
   min-height: 100vh;
   display: flex;
