@@ -3,37 +3,37 @@ import classnames from "classnames";
 import VisibilitySensor from "react-visibility-sensor";
 import ScrollAnimation from "react-animate-on-scroll";
 
-import "./UASection.css";
+import "./LastWeeksWinsSection.css";
 
 const shots = [
-  "/ua-6.png",
-  "/ua-2.png",
-  "/ua-3.png",
-  "/ua-4.png",
-  "/ua-5.png",
-  "/ua-1.png",
+  "/last-week-6.png",
+  "/last-week-5.png",
+  "/last-week-4.png",
+  "/last-week-3.png",
+  "/last-week-2.png",
+  "/last-week-1.png",
 ];
 
-const UASection = () => {
+const LastWeeksWinsSection = () => {
   const imageElems = shots.map((src, index) => (
     <VisibilitySensor key={`${src}-${index}`} partialVisibility={true}>
       {({ isVisible }) => (
         <img
           className={classnames(`shot shot-${index}`, { shown: isVisible })}
           src={src}
-          alt="Screenshot of UA"
+          alt="Screenshot of Last Week's Wins"
         />
       )}
     </VisibilitySensor>
   ));
   return (
-    <div className="ua-section">
-      <ScrollAnimation animateIn="fadeIn" animateOnce={true}>
-        <h2>Unfair Advantage</h2>
+    <div className="last-weeks-wins-section">
+      <ScrollAnimation animateIn="zoomIn" animateOnce={true}>
+        <h2>Last Week&apos;s Wins</h2>
       </ScrollAnimation>
       {imageElems}
     </div>
   );
 };
 
-export default UASection;
+export default LastWeeksWinsSection;

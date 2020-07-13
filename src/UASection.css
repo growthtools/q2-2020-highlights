@@ -1,5 +1,5 @@
 .ua-section {
-  background: salmon;
+  background: linear-gradient(to bottom, #00dc7d 80%, white);
   color: black;
   min-height: 100vh;
   display: flex;
@@ -10,15 +10,7 @@
 }
 
 .ua-section h2 {
-  transition: 500ms ease-in-out all;
-  transform: translateY(-50px);
-  opacity: 0;
   font-size: 3rem;
-}
-
-.ua-section h2.shown {
-  transform: translateY(0px);
-  opacity: 1;
 }
 
 .ua-section img.shot {
@@ -47,14 +39,14 @@
 .ua-section img.shot-1.shown {
   transform: rotate(-15deg);
   top: 33%;
-  left: 250px;
+  left: 300px;
   transition-delay: 500ms;
 }
 
 .ua-section img.shot-2.shown {
   transform: rotate(35deg);
   top: 40%;
-  left: 550px;
+  left: 600px;
   transition-delay: 1500ms;
 }
 
@@ -68,14 +60,14 @@
 .ua-section img.shot-4.shown {
   transform: rotate(14deg);
   top: 40%;
-  right: 200px;
+  right: 250px;
   transition-delay: 2600ms;
 }
 
 .ua-section img.shot-5.shown {
   top: 34%;
   transform: rotate(-28deg);
-  right: 450px;
+  right: 600px;
   transition-delay: 3100ms;
 }
 

@@ -20,6 +20,7 @@ const utterThis = text => {
 const narrations = [
   "Welcome to the Q2, 2020, Growth Tools Engineering Team Highlights video!",
   "Unfair Advantage is the next evolution of Growth University. It will guide clients through the entire partnership process.",
+  "Last Week's Wins helps our clients two-fold. First, we help future clients become more confident that they will succeed with us. Secondly, we can use our position to promote our clients and grow their business even more. Plus, it's super cool to see all these wins!",
 ];
 
 let pages = Math.ceil(document.body.scrollHeight / window.innerHeight);
@@ -32,12 +33,7 @@ window.addEventListener("scroll", () => {
   }
 });
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById("root")
-);
+ReactDOM.render(<App />, document.getElementById("root"));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
