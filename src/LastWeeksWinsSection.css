@@ -15,7 +15,7 @@
 
 .last-weeks-wins-section img.shot {
   position: absolute;
-  top: 35%;
+  top: 15%;
   border: 1rem solid white;
   border-bottom: 3rem solid white;
   border-radius: 5px;
@@ -30,19 +30,20 @@
 
 .last-weeks-wins-section img.shot-0.shown {
   transform: rotate(23deg);
+  top: 35%;
   left: 120px;
 }
 
 .last-weeks-wins-section img.shot-1.shown {
   transform: rotate(-25deg);
-  top: 33%;
-  left: 350px;
+  top: 32%;
+  left: 300px;
   transition-delay: 500ms;
 }
 
 .last-weeks-wins-section img.shot-2.shown {
   transform: rotate(35deg);
-  top: 43%;
+  top: 40%;
   left: 500px;
   transition-delay: 1500ms;
 }
@@ -50,20 +51,20 @@
 .last-weeks-wins-section img.shot-3.shown {
   transform: rotate(-24deg);
   top: 35%;
-  right: 150px;
+  right: 90px;
   transition-delay: 2000ms;
 }
 
 .last-weeks-wins-section img.shot-4.shown {
   transform: rotate(14deg);
-  top: 35%;
+  top: 39%;
   right: 250px;
   transition-delay: 2600ms;
 }
 
 .last-weeks-wins-section img.shot-5.shown {
-  top: 24%;
-  transform: rotate(-28deg);
-  right: 530px;
+  top: 20%;
+  transform: rotate(-18deg);
+  right: 450px;
   transition-delay: 3100ms;
 }
