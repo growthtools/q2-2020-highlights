@@ -1,0 +1,76 @@
+.ua-section {
+  background: linear-gradient(to bottom, #00dc7d 80%, white);
+  color: black;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  transition: 500ms ease-in-out all;
+  position: relative;
+}
+
+.ua-section h2 {
+  font-size: 3rem;
+}
+
+.ua-section img.shot {
+  position: absolute;
+  top: 35%;
+  border: 1rem solid white;
+  border-bottom: 3rem solid white;
+  border-radius: 5px;
+  transform: rotate(30deg);
+  opacity: 0;
+  transition: 700ms ease-in-out all;
+  max-width: 400px;
+  max-height: 600px;
+  box-shadow: 0 2px 16px 0 rgba(0,0,0,0.08);
+}
+
+.ua-section img.shot.shown {
+  opacity: 1;
+}
+
+.ua-section img.shot-0.shown {
+  transform: rotate(25deg);
+  left: 100px;
+}
+
+.ua-section img.shot-1.shown {
+  transform: rotate(-15deg);
+  top: 33%;
+  left: 300px;
+  transition-delay: 500ms;
+}
+
+.ua-section img.shot-2.shown {
+  transform: rotate(35deg);
+  top: 40%;
+  left: 600px;
+  transition-delay: 1500ms;
+}
+
+.ua-section img.shot-3.shown {
+  transform: rotate(-24deg);
+  top: 30%;
+  right: 100px;
+  transition-delay: 2000ms;
+}
+
+.ua-section img.shot-4.shown {
+  transform: rotate(14deg);
+  top: 40%;
+  right: 250px;
+  transition-delay: 2600ms;
+}
+
+.ua-section img.shot-5.shown {
+  top: 34%;
+  transform: rotate(-28deg);
+  right: 600px;
+  transition-delay: 3100ms;
+}
+
+.ua-section img.shot:hover {
+  z-index: 10;
+}
