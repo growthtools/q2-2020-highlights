@@ -76,30 +76,21 @@ header h1.shown {
 .primary {
   border-radius: 6px;
   height: 48px;
-  // color: white;
-  // background-color: $growth-tools-green;
 }
 
 .secondary {
   border-radius: 6px;
   height: 48px;
-  // border: 2px solid $growth-tools-green;
-  // background-color: rgba(44, 216, 134, 0.05);
-  // color: $growth-tools-green;
 }
 
 .tertiary {
   border-radius: 4px;
   height: 32px;
-  // color: $growth-tools-green;
 }
 
-.tertiary .checkIcon {
-  height: 24px;
-  width: 24px;
+.checkmark {
   padding-right: 0.25rem;
   margin-left: -9px;
-  background-image: url("./check.svg");
 }
 
 .primary.pressed {
@@ -108,7 +99,6 @@ header h1.shown {
 
 .tertiary.hover {
   box-shadow: none;
-  // background-color: rgba(44, 216, 134, 0.1);
 }
 
 .tertiary.focus {
@@ -123,16 +113,8 @@ header h1.shown {
   box-shadow: none;
 }
 
-.focus {
-  // box-shadow: 0 0 0 8px rgba(44, 216, 134, 0.2), 0 2px 24px 0 rgba(44, 216, 134, 0.6);
-}
-
 .disabled {
   opacity: 0.2;
-  // box-shadow: 0 2px 12px 0 rgba(44, 216, 134, 0.25);
-}
-.hover {
-  // box-shadow: 0 2px 24px 0 rgba(44, 216, 134, 0.7);
 }
 
 .growthTools {
@@ -155,7 +137,4 @@ header h1.shown {
 }
 .accelerators {
   @include brandColor($white, $accelerator-blue, $accelerator-blue);
-}
-.gold {
-  @include brandColor($white, $growth-tools-gold, $growth-tools-gold);
 }
