@@ -9,7 +9,7 @@ const Button = ({
   pseudoClass
 }) => {
 
-  let initialClass = "button " + pseudoClass.toLowerCase();
+  let initialClass = "btn " + pseudoClass.toLowerCase();
 
   let classes = classnames(initialClass, {
     primary: buttonType === "primary",

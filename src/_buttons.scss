@@ -1,0 +1,93 @@
+.btn-types {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.btn-types h5 {
+  margin-left: 5rem;
+}
+.all-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  min-width: 101px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  box-sizing: border-box;
+  img {
+    padding-right: 0.25rem;
+    margin-left: -9px;
+  }
+}
+#IconCheck {
+  fill: red;
+}
+.primary {
+  border-radius: 6px;
+  height: 48px;
+}
+
+.secondary {
+  border-radius: 6px;
+  height: 48px;
+}
+
+.tertiary {
+  border-radius: 4px;
+  height: 32px;
+}
+
+.primary.pressed {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%);
+}
+
+.tertiary.hover {
+  box-shadow: none;
+}
+
+.tertiary.focus {
+  display: none;
+}
+
+.tertiary.pressed {
+  display: none;
+}
+
+.tertiary.disabled {
+  box-shadow: none;
+}
+
+.disabled {
+  opacity: 0.2;
+}
+
+.growthTools {
+  @include brandColor($white, $growth-tools-green, $growth-tools-green);
+}
+.growthUniversity {
+  @include brandColor($white, $university-green, $university-green);
+}
+.dripScripts {
+  @include brandColor($white, $drip-scripts-green, $drip-scripts-green);
+}
+.goViral {
+  @include brandColor($white, $goviral-orange, $goviral-orange);
+}
+.welcomely {
+  @include brandColor($white, $welcomely-pink, $welcomely-pink);
+}
+.attract {
+  @include brandColor($white, $attract-blue, $attract-blue);
+}
+.accelerators {
+  @include brandColor($white, $accelerator-blue, $accelerator-blue);
+}
