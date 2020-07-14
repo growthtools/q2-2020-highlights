@@ -1,0 +1,14 @@
+.thanks {
+  background: linear-gradient(to bottom, #00dc7d 80%, white);
+  color: black;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 500ms ease-in-out all;
+  position: relative;
+}
+
+.thanks h2 {
+  font-size: 5rem;
+}

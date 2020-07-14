@@ -7,6 +7,7 @@ import "./App.css";
 import "animate.css/animate.min.css";
 import UASection from "./UASection";
 import LastWeeksWinsSection from "./LastWeeksWinsSection";
+import Thanks from "./Thanks";
 
 function App() {
   const [showns, setShowns] = useImmer({});
@@ -38,6 +39,7 @@ function App() {
       </header>
       <UASection />
       <LastWeeksWinsSection />
+      <Thanks />
     </div>
   );
 }

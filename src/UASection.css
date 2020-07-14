@@ -33,6 +33,7 @@
 
 .ua-section img.shot-0.shown {
   transform: rotate(25deg);
+  top: 30%;
   left: 100px;
 }
 
